@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/f035a00893.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="./Assets/icons8-fahrenheit-symbol-48.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container top">
+        <h1>Weather App</h1>
+        <h4>Enter a City Name:</h4>
+        <form action="" onsubmit="return false">
+          <input
+            type="text"
+            class="search"
+            placeholder="E.g, New York, London, Paris"
+          />
+          <button class="submitBtn">Search City</button>
+          <p class="error"></p>
+        </form>
+      </div>
+
+      <section class="infos disable">
+        <div class="weather-info">
+          <h2 class="tempDeg"></h2>
+          <img class="weatherIcon" src="" alt="" />
+        </div>
+
+        <div class="location">
+          <span class="fa-solid fa-city"></span>
+          <p class="city"><i></i></p>
+          <span class="fa-solid fa-calendar"></span>
+          <p class="date"><i></i></p>
+        </div>
+
+        <div class="current">
+          <span class="fas fa-temperature-high"></span>
+          <p class="temp">
+            Temp: 26
+            <span>°</span>
+          </p>
+          <!--for degree symbol press alt0176 on keyboard-->
+          <span class="fas fa-cloud-sun"></span>
+          <p class="weatherConditions">Weather: Sunny</p>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
